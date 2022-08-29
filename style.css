@@ -1,0 +1,268 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+	scroll-behavior: smooth;
+}
+
+header {
+	background: #41575f;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 5px;
+	
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	margin-right: auto;
+	margin-left: 50px;
+	cursor: pointer;
+	transition: all .5s ease 0s;
+}
+
+.logo:hover {
+	transform: rotate(2deg) scale(1.1);
+}
+
+.btn-cta {
+	width: 90px;
+	border: none;
+	font-size: 18px;
+	padding: 4px 12px;
+	background: #eaeaea;
+	cursor: pointer;
+	border-radius:8px;
+	transition: .3s ease-in-out;
+}
+
+.btn-cta:hover {
+	width: 100px;
+	background: #83aebf;
+	color: #eaeaea;
+}
+
+nav ul{
+	display: flex;
+	padding: 5px;
+}
+
+li {
+	list-style-type: none;
+	padding: 10px;
+	margin-right: 40px;
+}
+
+li a {
+	transition: all .5s ease 0s;
+	display: inline-block;
+}
+
+li a:hover {
+	color: #FFE4E1;
+	transform: rotate(2deg) scale(1.1);
+	transform: rotate(2deg) scale(1.1);
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.description {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.img-foto1 {
+	width: 60%;
+	height: 60%;
+	padding: 10px;
+}
+
+.parallax {
+	background-image: url('assets/images/balebengong3.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.tentang {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	background: #41575f;
+	padding: 10px;
+}
+
+.mt-10 {
+	margin-top: 20px;
+}
+
+.title1 {
+	font-size: 50px;
+	font-weight: bold;
+	color: #eaeaea;
+}
+
+.description1 {
+	font-size: 20px;
+	font-weight: bolder;
+	color: #eaeaea;
+
+}
+
+.title2 {
+	font-size: 60px;
+	text-align: center;
+}
+
+.card {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+}
+
+.card-item {
+	width: 20%;
+	padding: 10px;
+	text-align: center;
+	padding: 14px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+.icon {
+	width: 75px;
+	height: 75px;
+	margin: 10px;
+	padding: 4px;
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.card-description {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.parallax2 {
+	background-image: url('assets/images/balebengong4.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	background: #41575f;
+	padding: 10px;
+}
+
+.title2 {
+	font-size: 70px;
+	font-weight: bold;
+	color: #eaeaea;
+}
+
+.parallax3 {
+	background-image: url('assets/images/balebengong2.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.parallax4 {
+	background-image: url('assets/images/balebengong5.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #41575f;
+	color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+	.logo {
+		margin-left: auto;
+		width: 60px;
+		height: 60px;
+	}
+	
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	
+	.card-item {
+		width: 100%;
+	}
+	
+	.intro {
+		margin-top: 20px;
+	}
+	
+	.img-foto1 {
+		padding: 0px;
+	}
+	
+	nav {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #41575f;
+		z-index: 9;
+		padding: 0px;
+	}
+	
+	footer {
+		margin-bottom: 50px;
+		margin-top: 6px;
+	} 
+}
